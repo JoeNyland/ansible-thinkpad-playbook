@@ -50,7 +50,16 @@ sanoid_policies:
   rpool:
     use_template: default
     recursive: 'yes'
+  rpool/var/cache:
+    use_template: none
+    recursive: 'yes'
   rpool/var/lib/docker:
+    use_template: none
+    recursive: 'yes'
+  rpool/var/lib/nfs:
+    use_template: none
+    recursive: 'yes'
+  rpool/var/tmp:
     use_template: none
     recursive: 'yes'
 sudo_users:
@@ -93,5 +102,13 @@ zfs_datasets:
     mountpoint: /
   rpool/var:
     canmount: 'off'
+  rpool/var/cache:
+    com.sun:auto-snapshot: 'false'
   rpool/var/lib:
     canmount: 'off'
+  rpool/var/lib/docker:
+    com.sun:auto-snapshot: 'false'
+  rpool/var/lib/nfs:
+    com.sun:auto-snapshot: 'false'
+  rpool/var/tmp:
+    com.sun:auto-snapshot: 'false'
