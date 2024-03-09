@@ -4,6 +4,7 @@
   become: true
   roles:
     - joenyland.brave_browser
+    - joenyland.docker
     - joenyland.github_cli
     - joenyland.homeshick
     - joenyland.hostname

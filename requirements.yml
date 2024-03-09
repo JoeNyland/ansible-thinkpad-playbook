@@ -4,6 +4,8 @@ collections:
 roles:
   - name: joenyland.brave_browser
     src: https://github.com/JoeNyland/ansible-brave-browser-role
+  - name: joenyland.docker
+    src: https://github.com/JoeNyland/ansible-docker-role
   - name: joenyland.github_cli
     src: https://github.com/JoeNyland/ansible-github-cli-role
   - name: joenyland.homeshick

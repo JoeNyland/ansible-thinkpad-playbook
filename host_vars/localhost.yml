@@ -2,6 +2,8 @@
 homeshick_dotfiles_repos:
   dotfiles: git@github.com:JoeNyland/dotfiles.git
 hostname: ThinkPad-T480
+docker_users:
+  - joe
 domain: home.joe.nyland.io
 journalctl_users:
   - joe
@@ -47,6 +49,9 @@ sanoid_policies:
     recursive: 'yes'
   rpool:
     use_template: default
+    recursive: 'yes'
+  rpool/var/lib/docker:
+    use_template: none
     recursive: 'yes'
 sudo_users:
   - joe
