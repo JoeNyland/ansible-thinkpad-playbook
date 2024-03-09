@@ -1,4 +1,6 @@
 ---
+collections:
+  - community.general
 roles:
   - name: joenyland.brave_browser
     src: https://github.com/JoeNyland/ansible-brave-browser-role
