@@ -100,6 +100,8 @@ zfs_datasets:
   rpool/ROOT/debian:
     canmount: noauto
     mountpoint: /
+  rpool/usr:
+    canmount: 'off'
   rpool/var:
     canmount: 'off'
   rpool/var/cache:
